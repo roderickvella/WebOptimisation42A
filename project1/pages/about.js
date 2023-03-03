@@ -1,13 +1,13 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-function Home(){
+function About(){
   return(
     <div className="grid-container">
       <div className="content">
           <Navbar/>
           <main className="main-section">
-            <h1>Home Page</h1>
+            <h1>About Us</h1>
           </main>
       </div>
 
@@ -18,4 +18,4 @@ function Home(){
   );
 }
 
-export default Home;
+export default About;
