@@ -17,12 +17,14 @@ function GamesList(){
           <Navbar/>
           <main className="main-section">
             <h1>Games List</h1>
-            <GameButton id="1" image={image1} alt="Image 1"/>
-            <GameButton id="2" image={image2} alt="Image 2" />
-            <GameButton id="3" image={image3} alt="Image 3"/>
-            <GameButton id="4" image={image4} alt="Image 4"/>
-            <GameButton id="5" image={image5} alt="Image 5"/>
-            <GameButton id="6" image={image6} alt="Image 6"/>
+            <div className="game-grid-container">
+              <GameButton id="1" image={image1} alt="Image 1"/>
+              <GameButton id="2" image={image2} alt="Image 2" />
+              <GameButton id="3" image={image3} alt="Image 3"/>
+              <GameButton id="4" image={image4} alt="Image 4"/>
+              <GameButton id="5" image={image5} alt="Image 5"/>
+              <GameButton id="6" image={image6} alt="Image 6"/>
+            </div>
           </main>
       </div>
 

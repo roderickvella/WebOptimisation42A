@@ -47,8 +47,8 @@ nav a{
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
-  height: auto;
+  width:150px;
+  height: 150px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -57,8 +57,8 @@ nav a{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 75px;
+  left: 75px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -79,10 +79,21 @@ nav a{
   padding: 16px 32px;
 }
 
+.game-grid-container{
+  display: grid;
+  grid-template-columns: repeat(6,auto);
+  background-color:#dedede ;
+}
 
+.game-grid-item{
+  padding: 5px;
+}
 
-
-
+@media (max-width:1000px) {
+  .game-grid-container{
+    grid-template-columns: auto auto auto;
+  }
+}
 
 @media (max-width:600px){
   nav{
@@ -91,5 +102,9 @@ nav a{
   nav a{
     width:100%;
     text-align: center;
+  }
+
+  .game-grid-container{
+    grid-template-columns: auto auto;
   }
 }
