@@ -1,6 +1,8 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import {useRouter} from "next/router";
+import GameOne from "@/components/game-one";
+import GameTwo from "@/components/game-two";
 
 function GameSession(){
 
@@ -9,10 +11,10 @@ function GameSession(){
 
     let game;
     if(gameId === "1"){
-        game = <h2>Render Game 1</h2>
+        game = <GameOne/>
     }
     else if(gameId==="2"){
-        game = <h2>Render Game 2</h2>
+        game = <GameTwo/>
     }
     else{
         game = <h2>Game not yet developed</h2>
