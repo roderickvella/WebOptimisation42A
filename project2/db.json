@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "email": "john.doe@example.com",
+      "country": "United States"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "surname": "Smith",
+      "email": "jane.smith@example.com",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 3,
+      "name": "Alice",
+      "surname": "Brown",
+      "email": "alice.brown@example.com",
+      "country": "Australia"
+    },
+    {
+      "id": 4,
+      "name": "Roderick",
+      "surname": "Vella",
+      "email": "roderick.vella@mcast.edu.mt",
+      "country": "Malta"
+    }
+  ]
+}
