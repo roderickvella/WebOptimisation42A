@@ -1,0 +1,26 @@
+{
+  "home": {
+    "description": "Welcome to ABC Mobile, the premier destination for cutting-edge technology and sleek, stylish smartphones. Our company was founded with the goal of providing consumers with the latest and greatest in mobile technology at an affordable price. We pride ourselves on offering a wide range of devices to suit every need and budget, from budget-friendly options to high-end flagship models. Our team of experts is constantly scouring the market for the latest advancements in mobile technology, ensuring that our customers always have access to the latest and greatest. Shop with us today and experience the future of mobile technology."
+  },
+  "products": [
+    {
+      "id": 1,
+      "title": "Product title 1",
+      "description": "Description for product 1. This product is amazing. One of the best out there.",
+      "price": "€300.00",
+      "image": "https://via.placeholder.com/300x400.png?text=Product1",
+      "purchased": true
+    },
+    {
+      "id": 2,
+      "title": "Product title 2",
+      "description": "Description for product 2. This product is amazing. One of the best out there.",
+      "price": "€20.00",
+      "image": "https://via.placeholder.com/300x400.png?text=Product2",
+      "purchased": true
+    }
+  ],
+  "feedback": [
+   
+  ]
+}

@@ -1,0 +1,77 @@
+/* Basic styles for all devices */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header,
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  
+  .section {
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
+  
+  .navigation {
+    background-color: #434343;
+    padding: 10px;
+  }
+  
+  .navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query for larger screens (min-width: 768px) */
+  @media (min-width: 768px) {
+    .header,
+    .footer {
+      padding: 3rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+    .subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .section {
+      padding: 3rem;
+    }
+  
+    .navigation a {
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+  
+    .footer {
+      padding: 2rem;
+    }
+  }
+  
