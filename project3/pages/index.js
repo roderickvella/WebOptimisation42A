@@ -8,12 +8,13 @@ function Home({ details }) {
 
       <header className="header">
         <h1>Welcome to my website</h1>
-        <p>This is the home page</p>
+        <p>subtitle</p>
+       
       </header>
 
       <section className="section">
         <h2>Header Two</h2>
-        <p>some description goes over here</p>
+        <p>{details.description}</p>
       </section>
 
       <Footer/>
@@ -25,5 +26,15 @@ function Home({ details }) {
 }
 
 export default Home;
+
+export async function getStaticProps(){
+  const response = await fetch("http://localhost:8080/home")
+  const data = await response.json()
+  console.log(data);
+
+  return{
+    props:{details:data}
+  }
+}
 
 
