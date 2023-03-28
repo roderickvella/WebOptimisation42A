@@ -1,10 +1,46 @@
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import Image from "next/image"
+import {useState} from "react";
+import Head from "next/head";
 
 function Products({products}) {
+
+  const[button1Visible,setButton1Visible] = useState(!products[0].purchased);
+  const[button2Visible,setButton2Visible] = useState(!products[1].purchased);
+
+  const handleClick = async (event) =>{
+    
+    //this code is executed client-side (on the browser)
+    //console.log("test");
+    const id = event.target.dataset.id;
+    console.log("Product id chosen:"+id);
+
+    const response = await fetch(`http://localhost:8080/products/${id}`,{
+      method: "PATCH",
+      body: JSON.stringify({purchased:true}),
+      headers: {'Content-Type':'application/json'}
+    });
+
+    if(id==="1"){
+      setButton1Visible(false);
+    }
+    else if(id==="2"){
+      setButton2Visible(false);
+    }
+
+  }
+
   return (
     <div>
+      <Head>
+        <title>Products</title>
+        <meta 
+          name="description"
+          content="Check out iPhone 12 XR Pro and Iphone etc. Visit our local store at Mosta"
+        />
+      </Head>
+
       <Nav />
 
       <header className="header">
@@ -19,7 +55,12 @@ function Products({products}) {
             <h2>{products[0].title}</h2>
             <p className ="price">{products[0].price}</p>
             <p>{products[0].description}</p>
-            <button>Add to Cart</button>
+            {
+              button1Visible && (
+                <button onClick={handleClick} data-id={products[0].id}>Add to Cart</button>
+              )
+            }
+          
           </div>
 
           <div className="product-card">
@@ -27,7 +68,12 @@ function Products({products}) {
             <h2>{products[1].title}</h2>
             <p className ="price">{products[1].price}</p>
             <p>{products[1].description}</p>
-            <button>Add to Cart</button>
+            {
+              button2Visible && (
+                <button onClick={handleClick} data-id={products[1].id}>Add to Cart</button>
+              )
+            }
+            
           </div>
           {/* Add more product cards here  */}
         </div>
