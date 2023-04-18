@@ -20,5 +20,16 @@
       "purchased": true
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "firstName": "roderick",
+      "comments": "my comment",
+      "id": 1
+    },
+    {
+      "firstName": "roderick",
+      "comments": "my another comment",
+      "id": 2
+    }
+  ]
 }
